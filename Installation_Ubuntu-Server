@@ -1,0 +1,18 @@
+Step 1: Install Netdata using kickstart.sh script
+$ apt show netdata
+
+To install Netdata, simply run the kickstart script as follows.
+
+$ bash <(curl -Ss https://my-netdata.io/kickstart.sh)
+
+Instalation completed.
+-------------------------------------------------------------------
+Step 2: Confirm Netdata is running
+$ sudo netstat -pnltu | grep 19999
+
+$ sudo systemctl status netdata
+
+------------------------------------------------------------------
+
+Step 3: Access Netdata dashboard
+http://host-ip:19999
